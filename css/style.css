@@ -1,0 +1,380 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap');
+
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+/*Estilo al cuerpo del documento */
+body{
+
+font-family: 'Lato', sans-serif;
+font-size: 18px; 
+line-height: 1.5;
+width: auto;
+height: auto;
+
+}
+
+/*Estilo al emcabezado de la pagina*/
+header {
+
+background-color: #f0e9e4;
+border:none;
+box-shadow: 1px 1px 5px #5f5f55;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+
+}
+
+/*Estilo al logo de la pagina */
+.img-logo {
+    max-width: 250px;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    margin-top: 4px;
+    padding: 4px;
+}
+
+/* estilo a las section*/
+section {
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 15px;
+min-height: 100vh;
+}
+
+figure{
+
+    display: block;
+}
+
+ .img1 {
+border-radius: 100%;
+box-shadow: 1px 1px 5px rgb(0, 0, 0);
+width: 300px;
+height: 300px;
+max-width: 100%;
+margin-top: 15px;
+
+
+}
+
+/*Estilo al navegador responsive*/
+nav{
+
+    display: flex;
+    
+}
+
+/* Para quitar los puntos a los items de listas */
+ul{
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    width: 100%;
+    margin-left: auto;
+}
+
+li{
+    margin-right: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration:none;
+    color:inherit;
+    color: rgb(30, 30, 160);
+
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.curriculo{
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(230, 122, 79);
+    box-shadow: 2px 1px 5px #5f5f55;
+    margin-top: 20px;
+
+}
+
+.mi-curriculo{
+
+    color: rgb(247, 240, 240);
+    margin-left: 32px;
+}
+
+.mi-contacto{
+
+    background-color: rgb(238, 174, 145);
+    padding: 8px;
+    margin-top: 10em;
+    border-radius: 10px;
+}
+
+.p-contacto{
+
+    align-items: center;
+    padding: 10px;
+}
+    
+.imgsocial{
+    
+width: 80px;
+margin-top:4em;
+margin-right: 1em;
+margin-left: 0.5em;
+}
+
+.social{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 91, 42);
+    height: 5em;
+    
+}
+
+.pie-de-pagina{
+
+    color: white;
+} 
+
+#modobtn{
+
+    display: none;
+}
+/* Aqui comienza el @media query modo Desktop */
+@media (min-width: 1024px){
+
+    body{
+
+background-color: rgb(241, 222, 211);
+
+ }
+
+    header {
+
+        background-color: #f0e9e4;
+        width: 100%;
+        height: 75px;
+        border: none;
+        overflow: hidden;
+        
+        }
+
+.curriculo:hover{
+
+    background-color: rgb(216, 70, 70);
+}
+
+.menu:hover{
+
+    background-color:rgb(241, 113, 113);
+    padding:5px 6px 3px;
+    border-radius: 3px;
+    color:lightcyan
+}
+figure{
+
+    margin-bottom: 190px;
+}
+
+
+#inicio{
+
+    flex-direction: row;
+    padding: 15px;
+}
+
+.parrafo1{
+
+    font-size: 18px;
+    background-color: rgb(238, 174, 145);
+    line-height: 1.5;
+    padding: 2px 15px 15px;
+}
+
+.presentacion{
+
+    padding: 20px;
+    box-shadow: 1px 3px 5px #5f5f55;
+    margin-left: 12px;
+    margin-top: 30px;
+}
+
+.mi-contacto{
+
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+}
+
+.img-logo{
+
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.animation{
+
+    overflow: hidden;
+}
+
+.animation:hover .img-logo{
+
+    transform: rotate(180deg);
+}
+
+.img1{
+
+    width: 600px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-right: 20px;
+    transition: trasnform 0.1s ease;
+}
+
+figure:hover .img1{
+
+    transform: translateY(40px);
+}
+
+
+.imgsocial{
+
+width: 80px;
+transition: transform 0.3s ease;
+
+}
+
+.imgsocial:hover {
+
+    transform: rotate(20deg);
+}
+h1{
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+h2{
+
+    font-size: 36px;
+}
+
+  /*Estilo al boton de los icono*/
+ #modobtn{
+
+     display: flex;
+     font-size: 27px;
+     margin-top: 17px;
+     margin-left: 25px;
+     background: transparent;
+     outline: 0;
+     border: 0;
+     cursor: pointer;
+     width: 30px;
+     height: 30px;
+     }
+/*Estilo a la funcion en el modo oscuro*/
+
+i#close-night{
+
+    display: flex;
+}
+
+i#open-day{
+
+    display: none;
+}
+
+/* activacion del btn modo oscuro*/
+body.modo-oscuro i#close-night{
+
+    display: none;
+}
+
+body.modo-oscuro i#open-day{
+
+    display: flex;
+    color: azure;
+}
+/*Estilo en la funcion al titulo*/
+body.modo-oscuro h1{
+
+    color: cornsilk;
+}
+
+/*estilo en la funcion al article contacto*/
+body.modo-oscuro .mi-contacto{
+
+    background-color: transparent;
+    box-shadow: 1px 1px 5px #e2e2d7;
+}
+
+/*Estilo de funcion al parrafo de presentacion */
+body.modo-oscuro .parrafo1{
+
+    background-color: transparent;
+}
+
+body.modo-oscuro .presentacion{
+
+    box-shadow: 1px 1px 5px #e2e2d7 ;
+}
+/*Estilo de la Funcion modo oscuro*/
+.modo-oscuro{
+
+    background-color:#222;
+    color:#f0e9e4;
+    background-image: none;
+}
+}
+
