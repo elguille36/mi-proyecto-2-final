@@ -8,7 +8,7 @@
     <title>Guillermo Perez</title>
 
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/347d85f9c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -22,12 +22,17 @@
             </a>
         </div>
 
+        <button id="menu-btn">
+            <i class="bi bi-list" id="open-btn"></i>
+            <i class="bi bi-x-lg" id="close-btn"></i>
+
+        </button>
         <!--menu lista navegadores-->
         <nav>
 
-            <ul>
-                <li><a href="#inicio" class="menu">Inicio</a></li>
-                <li><a href="#Contacto" class="menu">Contacto</a></li>
+            <ul id="menu">
+                <li class="menu-nav active"><a href="#inicio">Inicio</a></li>
+                <li class="menu-nav"><a href="#Contacto" class="menu">Contacto</a></li>
 
             </ul>
 
@@ -35,10 +40,10 @@
     </header>
 
     <main>
-            <button id="modobtn">
-                <i class="fa-solid fa-moon" id="close-night"></i>
-                <i class="fa-regular fa-sun" id="open-day"></i>
-            </button>
+        <button id="modobtn">
+            <i class="bi bi-moon-stars-fill" id="close-night"></i>
+            <i class="bi bi-sun" id="open-day"></i>
+        </button>
         <!--presentacion personal -->
         <section id="inicio">
 
@@ -50,41 +55,39 @@
                 <h1>Hola! Soy Guillermo</h1>
 
 
-                <p class="parrafo1">¡Hola! Permíteme presentarme. Soy un apasionado programador con experiencia en
+                <p class="parrafo">¡Hola! Permíteme presentarme. Soy un apasionado programador con experiencia en
                     diversos lenguajes y
                     tecnologías.Me especializo en el desarrollo de aplicaciones web, así como en la creación
                     de soluciones tecnológicas personalizadas.</p>
 
-                <p class="parrafo1"> A lo largo de mi carrera, he trabajado en proyectos desafiantes y emocionantes,
-                    donde he tenido la
-                    oportunidad de aplicar mis habilidades técnicas y mi creatividad para resolver problemas complejos.
+                <p class="parrafo">
                     Mi enfoque principal es desarrollar soluciones eficientes y robustas que cumplan con los
                     requerimientos del cliente.</p>
 
-                <p class="parrafo1">Tengo un amplio conocimiento en lenguajes como
+                <p class="parrafo">Tengo un amplio conocimiento en lenguajes como
                     <strong>HTML</strong>,<strong>CSS</strong> y <strong>JAVASCRIPTS</strong>. Además, me mantengo
                     actualizado sobre las últimas
                     tendencias y avances en el campo de la programación, lo que me permite estar al tanto de las mejores
                     prácticas y herramientas disponibles.
                 </p>
 
-                <p class="parrafo1">Soy un comunicador efectivo y disfruto trabajar en equipo. Creo en la importancia de
+                <p class="parrafo">Soy un comunicador efectivo y disfruto trabajar en equipo. Creo en la importancia de
                     la colaboración
                     y la retroalimentación para lograr resultados excepcionales. Estoy constantemente buscando nuevos
                     desafíos que me permitan crecer profesionalmente y expandir mi conjunto de habilidades.</p>
 
-                <p class="parrafo1"> Si estás buscando un programador comprometido, apasionado y orientado a resultados,
+                <p class="parrafo">Si estás buscando un programador comprometido, apasionado y orientado a resultados,
                     estaré encantado
                     de trabajar contigo en tu próximo proyecto. Juntos, podemos llevar tu visión al siguiente nivel y
-                    alcanzar el éxito. ¡Espero tener la oportunidad de colaborar contigo!</p>
+                    alcanzar el éxito. ¡Espero tener la oportunidad de colaborar contigo!
+                </p><br>
 
+                <a href="https://www.linkedin.com/in/guillermo-enrique-perez-rincon-51768a266" target="_blank"
+                    class="mi-curriculo">Descargar mi CV</a>
 
-                <div class="curriculo">
+                <button onclick="boton()" id="Cambio">SimFondo
 
-                    <a href="https://www.linkedin.com/in/guillermo-enrique-perez-rincon-51768a266" target="_blank"
-                        class="mi-curriculo">Descargar mi CV</a>
-                </div>
-
+                </button>
             </article>
 
             <!--enlace del curriculo-->
@@ -96,9 +99,9 @@
 
                 <h2>Hablemos!</h2>
 
-                <p class="p-contacto">Soy un persona comprometida con mi trabajo, entregando grandes resultado competitivo
-                    puedes encontrarme por cada una de mis redes sociales que se encuentra de bajo de la pagina
-                    y podremos tener una mejor conversacion y formar parte de su equipo..!
+                <p class="p-contacto">Soy un persona comprometida con mi trabajo, competitivo, entregando grandes resultados y
+                    puedes encontrarme por cada una de mis redes sociales que se encuentra en la parte inferior de la pagina
+                    asi podremos tener una mejor conversacion y formar parte de su equipo!.
 
                 </p>
 
@@ -125,10 +128,13 @@
     <footer>
 
         <p class="pie-de-pagina">
-            <i class="fa-regular fa-copyright"></i>
-            2023/Geperezrsud@gmail.com
+            <i class="bi bi-c-circle"></i>
+            2023/Geperezrsud@gmail.com<br>
         </p>
 
+        <h4>Sigueme en Redes Sociales:</h4>
+        <a href="https://www.facebook.com/guillermo.perez.980315/" target="_blank" class="socialfotter"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/geperezrsud/" target="_blank" class="socialfotter"><i class="bi bi-instagram"></i></a>
     </footer>
     <script src="./js/main.js"></script>
 </body>
