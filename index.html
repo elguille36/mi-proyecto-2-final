@@ -6,22 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guillermo Perez</title>
-
+    <link rel="shortcut icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
 
-
+    <!--Encabezado de la pagina-->
     <header>
+        <!--contenedor del logo de la pagina-->
         <div class="animation">
             <a href="#inicio">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDgeosI-_hglN6Y5DHTZa9lwOrUJ8klQ4MtQ&usqp=CAU"
                     class="img-logo" alt="foto de programacion">
             </a>
         </div>
-
+        <!--Boton del menu en mobile-->
         <button id="menu-btn">
             <i class="bi bi-list" id="open-btn"></i>
             <i class="bi bi-x-lg" id="close-btn"></i>
@@ -32,7 +33,8 @@
 
             <ul id="menu">
                 <li class="menu-nav active"><a href="#inicio">Inicio</a></li>
-                <li class="menu-nav"><a href="#Contacto" class="menu">Contacto</a></li>
+                <li class="menu-nav"><a href="#Contacto">Contacto</a></li>
+                <li class="menu-nav"><a href="#MisHabilidades">Mis Habilidades</a></li>
 
             </ul>
 
@@ -40,11 +42,15 @@
     </header>
 
     <main>
-        <button id="modobtn">
-            <i class="bi bi-moon-stars-fill" id="close-night"></i>
-            <i class="bi bi-sun" id="open-day"></i>
-        </button>
-        <!--presentacion personal -->
+        <!--Contenedor del boton Dark-->
+        <div class="contenedor-btn">
+            <button id="modobtn">
+                <i class="bi bi-moon-stars-fill" id="close-night"></i>
+                <i class="bi bi-sun" id="open-day"></i>
+            </button>
+        </div>
+
+        <!--section de mi presentacion-->
         <section id="inicio">
 
             <figure>
@@ -82,32 +88,31 @@
                     alcanzar el éxito. ¡Espero tener la oportunidad de colaborar contigo!
                 </p><br>
 
-                <a href="https://www.linkedin.com/in/guillermo-enrique-perez-rincon-51768a266" target="_blank"
+                <!--enlace del curriculo-->
+                <a href="./img/curriculum-pdf.pdf" download="curriculum.pdf" target="_blank"
                     class="mi-curriculo">Descargar mi CV</a>
 
-                <button onclick="boton()" id="Cambio">SimFondo
 
-                </button>
+
             </article>
 
-            <!--enlace del curriculo-->
-        </section>
 
+        </section>
+        <!--section de mi contacto -->
         <section id="Contacto">
 
             <article class="mi-contacto">
 
                 <h2>Hablemos!</h2>
 
-                <p class="p-contacto">Soy un persona comprometida con mi trabajo, competitivo, entregando grandes resultados y
-                    puedes encontrarme por cada una de mis redes sociales que se encuentra en la parte inferior de la pagina
+                <p class="p-contacto">Soy un persona comprometida con mi trabajo, competitivo, entregando grandes
+                    resultados y
+                    puedes encontrarme por cada una de mis redes sociales que se encuentra en la parte inferior de la
+                    pagina
                     asi podremos tener una mejor conversacion y formar parte de su equipo!.
 
                 </p>
-
-                <!--Articulos de las redes sociales-->
-            </article>
-            <article>
+                <!--lista de los enlace redes sociales-->
                 <ul class="redeSocial">
 
                     <li><a href="mailto:geperezrsud@gmail.com" target="_blank" class="social"> <img src="./img/mail.png"
@@ -119,7 +124,34 @@
                             <img src="./img/linkedin.png" class="imgsocial" alt="foto de linkedin"></a></li>
 
                 </ul>
+
+
             </article>
+
+        </section>
+        <!-- contenedor de titulo habilidades-->
+        <div class="t-habilidades">
+            <h3>Mis Habilidades:</h3>
+        </div>
+        <!--section de contenedores de mis habilidades-->
+        <section id="MisHabilidades">
+
+            <div class="contenedor">
+                <img src="./img/foto.proyecto123.jpg" class="img-contenedor" alt="foto proyecto">
+                <p class="p-img">Mis Proyecto</p>
+            </div>
+
+            <div class="contenedor">
+                <img src="./img/GitHub-Logo-650x366.png" class="img-contenedor" alt="foto github">
+                <p class="p-img">Repositorio en GitHub</p>
+            </div>
+
+            <div class="contenedor">
+                <img src="./img/bootstrap1.jpg" class="img-contenedor" alt="foto bootstrap">
+                <p class="p-img">Trabajo con Bootstrap</p>
+            </div>
+
+
         </section>
 
 
@@ -133,8 +165,10 @@
         </p>
 
         <h4>Sigueme en Redes Sociales:</h4>
-        <a href="https://www.facebook.com/guillermo.perez.980315/" target="_blank" class="socialfotter"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/geperezrsud/" target="_blank" class="socialfotter"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/guillermo.perez.980315/" target="_blank" class="socialfotter"><i
+                class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/geperezrsud/" target="_blank" class="socialfotter"><i
+                class="bi bi-instagram"></i></a>
     </footer>
     <script src="./js/main.js"></script>
 </body>
