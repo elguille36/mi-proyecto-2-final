@@ -66,11 +66,13 @@ padding: 15px;
 min-height: 100vh;
 }
 
+/*Un display a la figure de la imagen */
 figure{
 
     display: block;
 }
 
+/*Estilo y tamaño a la imagen personal*/
  .img1 {
 border-radius: 100%;
 box-shadow: 1px 1px 5px rgb(0, 0, 0);
@@ -92,16 +94,18 @@ nav{
 /* Para quitar los puntos a los items de listas */
 ul#menu{
     display: flex;
+    padding: 10px 20px;
     list-style: none;
     margin: 2px
 }
-
+/* Estilo a los enlace del menu*/
 li.menu-nav a{
     padding: 3px;
     display: inline-block;
     text-decoration: none;
 
 }
+/*Activacion a los menu al pasar el mouse*/
 li.menu-nav:hover, .active{
     
     background-color:rgb(226, 134, 98) ;
@@ -112,19 +116,28 @@ li.menu-nav:hover, .active{
    
 }
 
-
+/* Estilo a los titulo H2*/
 h2{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align:center;
 }
-
+/**/
 h1{
     text-align: center;
     margin-bottom: 10px;
 }
+/*Estilo a el article presentacion*/
+.presentacion{
 
+    padding: 10px;
+    box-shadow: 1px 3px 5px #5f5f55;
+    border-radius: 4px;
+    margin-top: 30px;
+    align-items: flex-end;
+}
 
+/*Estilo y espaciado al boton de curriculo*/
 .mi-curriculo{
     background-color: rgb(245, 122, 79);
     box-shadow: 2px 1px 5px #5f5f55;
@@ -134,26 +147,23 @@ h1{
     border-radius: 10px;
     text-decoration: none;
 }
-
+/*Cambio de color al boton curriculo*/
 .mi-curriculo:hover{
     background-color: rgb(219, 101, 65);
 }
-
+/*Estilo a los Articles de contacto*/
 .mi-contacto{
 
     background-color: rgb(231, 157, 123);
-    padding: 8px;
-    margin-top: 10em;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgb(59, 59, 59);
 }
-
+/*Espaciado a lo parrafo contacto*/
 .p-contacto{
 
-    align-items: center;
     padding: 10px;
 }
-    
+/*Tamaño y estilo a las imagenes de los enlace social*/
 .imgsocial{
     
 width: 80px;
@@ -161,15 +171,12 @@ margin-top:4em;
 margin-right: 1em;
 margin-left: 0.5em;
 }
-
+/*Estilo de un espaciado a los enlaces social*/
 .social{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4px;
+    padding: 6px;
 }
-
+/* estilo al footer y su tamaño*/
 footer {
     display: flex;
     justify-content: center;
@@ -178,26 +185,33 @@ footer {
     height: 5em;
     
 }
-
+/* estilo a los enlace de imagenes en los articles*/
 .redeSocial{
 
-    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
     display: flex;
     list-style: none;
 }
-
+/* ajustar el color del texto del footer*/
 .pie-de-pagina{
 
     color: white;
 } 
+/* posicion fija en el scroll al boton dark*/
+.contenedor-btn{
+    
+    position: fixed;
+}
 
  /*Estilo al boton de los icono*/
  #modobtn{
 
     display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     font-size: 27px;
-    margin-top: 17px;
-    margin-left: 25px;
+    margin: 15px;
     background: transparent;
     outline: 0;
     border: 0;
@@ -205,17 +219,17 @@ footer {
     width: 30px;
     height: 30px;
     }
-/*Estilo a la funcion en el modo oscuro*/
 
+/*Un display oculto al icono de la luna*/
 i#close-night{
 
    display: none;
 }
-
+/* icono del sol y color*/
 i#open-day{
 
    display: flex;
-   color: rgb(120, 133, 133);
+   color: rgb(73, 73, 66);
 }
 
 /* activacion del btn modo oscuro*/
@@ -224,7 +238,7 @@ body.modo-oscuro i#close-night{
    display: flex;
    color: azure;
 }
-
+/*cuando se activa modo dark un display oculto al icono sol*/
 body.modo-oscuro i#open-day{
 
    display: none;
@@ -242,15 +256,21 @@ body.modo-oscuro .mi-contacto{
    box-shadow: 1px 1px 5px #e2e2d7;
 }
 
-/*Estilo de funcion al parrafo de presentacion */
+/*Estilo de funcion transparencia al parrafo del article presentacion */
 body.modo-oscuro .parrafo{
 
    background-color: transparent;
 }
-
+/**/
 body.modo-oscuro .presentacion{
 
    box-shadow: 1px 1px 5px #e2e2d7 ;
+}
+/*estilo de la funcion a las imagenes en fondo blanco*/
+body.modo-oscuro .imgsocial{
+
+    background-color: azure;
+    border-radius: 3px ;
 }
 /*Estilo de la Funcion modo oscuro*/
 .modo-oscuro{
@@ -297,7 +317,7 @@ body.menu-active header{
     flex-wrap:wrap;
     align-items: flex-start;
     transition: height 0.3s;
-    background-color: rgb(240, 159, 84);
+    background-color: rgb(240, 159, 84,0.7);
 }
 /*detalles de activacion del boton a los navegadores*/
 body.menu-active nav{
@@ -325,15 +345,56 @@ body.menu-active li.menu-nav :hover{
     border-radius: 5px;
     background-color: azure;
 }
-
+/*Un display oculto en mobile a las redes sociales en el footer */
 h4,.socialfotter{
 
     display: none;
 }
+/*Estilo a la section habilidades*/
+#MisHabilidades{
 
-#Cambio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-    display: none;
+/*Estilo al Div ajuste de tamaño y color*/
+.contenedor{
+    width: 46%;
+   box-shadow: 2px 2px 5px #767574;
+   background-color: #f3b790;
+    border-radius: 5px;
+    padding: 20px;
+}
+/*Estilo a los div de las imagenes tamaño y posicionamiento*/
+.img-contenedor{
+
+    width: 50%;
+    margin-left: 2rem;
+    border-radius: 5px;
+}
+/*Estilo a los parrafo de las imagenes*/
+.p-img{
+
+    text-align: center;
+    font-size: 15px;
+}
+/*Estilo al div de habilidades*/
+.t-habilidades{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilo de fondo y color al titulo habilidades*/
+h3{
+
+    text-align: center;
+    background-color: rgb(247, 132, 78);
+    box-shadow: 1px 1px 5px #767574;
+    padding: 5px;
+    border-radius: 10px;
 }
 /* Aqui comienza el @media query modo Desktop */
 @media (min-width: 1024px){
@@ -342,9 +403,42 @@ h4,.socialfotter{
 
 background-color: rgb(241, 222, 211);
 background-image: url(https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/08/junior-web-developer-jobs.jpg);
-background-repeat:repeat-x;
-background-position: center;
+object-fit:cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
  }
+
+ #MisHabilidades{
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.img-contenedor{
+
+    width: 40%;
+    height: 20%;
+    margin-left: 5rem;
+    border-radius: 5px;
+}
+
+.img-contenedor:hover{
+
+    width:45%;
+}
+
+.contenedor{
+    width: 20%;
+   box-shadow: 2px 2px 5px #767574;
+   background-color: #f3b790;;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 
     header {
 
@@ -376,7 +470,8 @@ figure{
 
 
 #inicio{
-
+    
+    display: flex;
     flex-direction: row;
     padding: 15px;
 }
@@ -384,14 +479,15 @@ figure{
 .parrafo{
 
     font-size: 18px;
-    background-color: rgb(238, 174, 145);
     line-height: 1.5;
     padding: 2px 15px 15px;
+    background-color: #f3b790;
 }
 
 .presentacion{
 
-    padding: 5px;
+  
+    padding: 3px;
     box-shadow: 1px 3px 5px #5f5f55;
     border-radius: 4px;
     margin-left: 12px;
@@ -404,8 +500,17 @@ figure{
     width: 500px;
     padding: 30px;
     text-align: center;
-    background-color:rgb(247, 132, 78) ;
+    background-color:rgb(247, 132, 78,0.7) ;
 }
+
+.redeSocial{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
 
 .mi-curriculo{
     box-shadow: 2px 1px 5px #5f5f55;
@@ -434,7 +539,7 @@ figure{
     width: 600px;
     height: 400px;
     border-radius: 50%;
-    margin-left: 8px;
+    margin-left: 6px;
     margin-right: 20px;
     transition: trasnform 0.1s ease;
 }
@@ -463,7 +568,7 @@ h1{
 }
 
 
-h2{
+h2,h3{
 
     font-size: 36px;
 }
@@ -483,30 +588,10 @@ h4{
     font-size: 30px;
 }
 
-#Cambio{
+.socialfotter:hover{
 
-    display: inline-block;
-    background-color: rgb(134, 69, 8);
-    color: azure;
-    width: 10%;
-    height: 40px;
-    border-radius: 20px;
-    margin-left: 42rem;
-    font-size: 15px;
-    box-shadow: 1px 1px 5px rgb(59, 59, 59);
+    margin-bottom: 10px;
 }
 
-.newColor .parrafo{
-
-    background-color: transparent;
-    color: rgb(24, 29, 29);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.newColor #Cambio{
-
-    background-color: transparent;
-    color: rgb(24, 29, 29);
-}
 }
 
