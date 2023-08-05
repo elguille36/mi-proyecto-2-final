@@ -37,13 +37,3 @@ menuNav.forEach(function(nav){
 
 });
 
-const parrafo=document.querySelectorAll('.parrafo');
-const cambio=document.querySelector('#Cambio');
-
-
-  cambio.addEventListener('click',function(){
-
-    document.body.classList.toggle('newColor');
-
-});
-
