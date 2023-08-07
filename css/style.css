@@ -1,10 +1,7 @@
-/* En este archivo escriban su CSS */
 
 /* Fonts */
 /* Importar aquí la font */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&display=swap');
-
-
 
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
@@ -30,7 +27,6 @@ height: auto;
 background-color:rgb(241, 222, 211) ;
 
 }
-
 
 /*Estilo al emcabezado de la pagina*/
 header {
@@ -80,6 +76,7 @@ width: 300px;
 height: 300px;
 max-width: 100%;
 margin-top: 15px;
+border-style:groove;
 
 
 }
@@ -112,8 +109,7 @@ li.menu-nav:hover, .active{
     color:rgb(247, 240, 240) ;
     transition: background-color 0.3s;
     border-radius: 2px;
-    
-   
+       
 }
 
 /* Estilo a los titulo H2*/
@@ -157,6 +153,7 @@ h1{
     background-color: rgb(231, 157, 123);
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgb(59, 59, 59);
+    border-style:dashed;
 }
 /*Espaciado a lo parrafo contacto*/
 .p-contacto{
@@ -254,6 +251,7 @@ body.modo-oscuro .mi-contacto{
 
    background-color: transparent;
    box-shadow: 1px 1px 5px #e2e2d7;
+   border-style: none;
 }
 
 /*Estilo de funcion transparencia al parrafo del article presentacion */
@@ -271,6 +269,16 @@ body.modo-oscuro .imgsocial{
 
     background-color: azure;
     border-radius: 3px ;
+}
+/*Estilo claro a la imagen en modo dark*/
+body.modo-oscuro .img-contenedor1 {
+
+    background-color: azure;
+}
+/*Estilo oculto del fondo al div de las imagenes en modo dark*/
+body.modo-oscuro .contenedor {
+
+    background-color: transparent;
 }
 /*Estilo de la Funcion modo oscuro*/
 .modo-oscuro{
@@ -366,35 +374,45 @@ h4,.socialfotter{
    background-color: #f3b790;
     border-radius: 5px;
     padding: 20px;
+    border-style:double;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 /*Estilo a los div de las imagenes tamaño y posicionamiento*/
-.img-contenedor{
+.img-contenedor,.img-contenedor1{
 
     width: 50%;
-    margin-left: 2rem;
     border-radius: 5px;
 }
+
 /*Estilo a los parrafo de las imagenes*/
 .p-img{
 
     text-align: center;
     font-size: 15px;
 }
+
 /*Estilo al div de habilidades*/
-.t-habilidades{
+#t-habilidades{
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 /* Estilo de fondo y color al titulo habilidades*/
-h3{
+.habilidades{
 
     text-align: center;
     background-color: rgb(247, 132, 78);
     box-shadow: 1px 1px 5px #767574;
     padding: 5px;
     border-radius: 10px;
+}
+
+.Color{
+
+    background-color: #8d7308;
 }
 /* Aqui comienza el @media query modo Desktop */
 @media (min-width: 1024px){
@@ -422,21 +440,27 @@ background-attachment: fixed;
 
     width: 40%;
     height: 20%;
-    margin-left: 5rem;
+    border-radius: 5px;
+}
+.img-contenedor1{
+
+    width: 40%;
     border-radius: 5px;
 }
 
-.img-contenedor:hover{
+.contenedor:hover{
 
-    width:45%;
+    margin-bottom: 10px;
 }
-
 .contenedor{
     width: 20%;
    box-shadow: 2px 2px 5px #767574;
    background-color: #f3b790;;
     border-radius: 5px;
     padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 
