@@ -397,7 +397,6 @@ h4,.socialfotter{
 #t-habilidades{
 
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 /* Estilo de fondo y color al titulo habilidades*/
@@ -410,10 +409,11 @@ h4,.socialfotter{
     border-radius: 10px;
 }
 
-.Color{
+.contenedor-video{
 
-    background-color: #8d7308;
+    display: none;
 }
+
 /* Aqui comienza el @media query modo Desktop */
 @media (min-width: 1024px){
 
@@ -615,6 +615,22 @@ h4{
 .socialfotter:hover{
 
     margin-bottom: 10px;
+}
+
+
+.contenedor-video{
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.video{
+
+    border-style:double;
+    padding: 15px;
+    background-color: #f3b790;
 }
 
 }
