@@ -5,7 +5,6 @@ const logotipo = document.querySelector('.img-logo');
 logotipo.src='https://previews.123rf.com/images/alluranet/alluranet1705/alluranet170503164/78230984-dise%C3%B1o-de-logotipo-de-transferencia-de-tecnolog%C3%ADa-letra-g.jpg';
 
 /* funcion al body en modo oscuro*/ 
-/*const cambioFondo=document.querySelector('body');*/
 const modoOscuro=document.querySelector('#modobtn');
 
 modobtn.addEventListener('click',function(){
@@ -36,4 +35,22 @@ menuNav.forEach(function(nav){
 });
 
 });
+/* dando un fondo de transparencia al pasar el mouse al titulo habilidades */
+ function cambioColor(){
+
+  document.querySelector('.habilidades').style.backgroundColor ='transparent';
+
+}
+
+function restaurarColor(){
+
+document.querySelector('.habilidades').style.backgroundColor ='rgb(247, 132, 78';
+
+}
+
+
+
+
+
+
 
